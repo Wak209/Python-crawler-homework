@@ -1,4 +1,4 @@
-# Python-crawler-homework
+![image](https://github.com/Wak209/Python-crawler-homework/assets/128209418/c02d2a78-4a62-4c2d-bc1a-fb2a49f1e329)# Python-crawler-homework
 
 
 功能1：对指定视频的数字数据（点赞、观看量等）进行获取：
@@ -52,6 +52,9 @@ def get_fans(mid):
 ```
 
 
+![image](https://github.com/Wak209/Python-crawler-homework/assets/128209418/bcff66d4-8ce7-47ce-8617-daf7cdd90d23)
+![image](https://github.com/Wak209/Python-crawler-homework/assets/128209418/6b97d798-5888-4990-9146-5a0e5c082007)
+
 
 
 (maxn参数可调，表示着一次对比中推荐视频数量)
@@ -80,14 +83,18 @@ Aid获取https://www.zhihu.com/answer/1099438784
 评论爬取时，考虑到数据量大，我还采用了多进程爬取。
 功能4：绘制图像分析文字数据
 词云绘制（反映视频大致内容与b站用户关注点），这部分存在bug，如BV1KF411J7Ri中有几千弹幕但是词云中元素却少的可怜，由于词云绘制基本上都是依靠jieba，我猜测可能是弹幕中的字符可能导致jieba分词或者词频出了问题
+![image](https://github.com/Wak209/Python-crawler-homework/assets/128209418/157c0027-09ca-491b-b685-09496b62cf75)
 
 热门评论数据可视化
+![image](https://github.com/Wak209/Python-crawler-homework/assets/128209418/68328928-720c-4c70-bd62-e5cd3f19cf63)
 
 (Top参数可调，表示着展示热评前几名)
 
+![image](https://github.com/Wak209/Python-crawler-homework/assets/128209418/f3ebde4e-33ad-4da2-9f73-16c96b62e110)
 
 评论中账户性别数据可视化
 
+![image](https://github.com/Wak209/Python-crawler-homework/assets/128209418/db648bb0-7fad-4235-be19-f569a72912d6)
 
 通过评论数量随时间变化反映视频热度变化
 
