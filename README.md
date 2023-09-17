@@ -1,4 +1,4 @@
-![image](https://github.com/Wak209/Python-crawler-homework/assets/128209418/c02d2a78-4a62-4c2d-bc1a-fb2a49f1e329)# Python-crawler-homework
+# Python-crawler-homework
 
 
 功能1：对指定视频的数字数据（点赞、观看量等）进行获取：
