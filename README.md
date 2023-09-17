@@ -3,6 +3,8 @@
 
 功能1：对指定视频的数字数据（点赞、观看量等）进行获取：
 分析视频源码可知，其网页代码经过了js渲染，而且所需要的数据有json格式的也有html格式的，最后选用正则表达式提取
+
+···
  RE  =  re.compile(r'<meta data-vue-meta="true" itemprop="keywords" name="keywords" content="(?P<title_and_label>.*?)">.*?'#视频名和标签组成的字符串（以，分割
                     r'true" itemprop="description" name="description" content="(?P<introduction>.*?)".*?'#视频简介 -表示无
                     r'name="author" content="(?P<up_name>.*?)".*?'#up主名字
@@ -16,7 +18,7 @@
                     r'</span><span title="投硬币枚数" class="coin">.*?</i>(?P<coin>.*?)</span>.*?' #投硬币枚数
                     r'<span title="收藏人数.*?</i>(?P<collect>.*?)</span>.*?' #收藏人数
                     r'<span title="分享" class="share"><i class="van-icon-videodetails_share"></i>(?P<share>.*?)<!----></span></div><div class="more">.*?' #转发 会有空格和回车
-                    ,re.S)
+                    ,re.S)···
 
 
 并把这些数据存入字典方便之后处理。
